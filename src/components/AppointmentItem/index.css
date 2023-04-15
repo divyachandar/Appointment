@@ -1,0 +1,41 @@
+/* Write your CSS here */
+.appointment-item {
+  list-style-type: none;
+}
+.appointment-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.appointment-details-card {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: #b5b7c4;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+}
+.date-time {
+  color: #b5b7c4;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+}
+.star-container {
+  background: transparent;
+  margin-right: 24px;
+  align-self: center;
+  border: none;
+  outline: none;
+}
+.star-icon-container {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.star-icon {
+}
