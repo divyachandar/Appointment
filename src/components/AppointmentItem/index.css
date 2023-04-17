@@ -1,41 +1,75 @@
-/* Write your CSS here */
 .appointment-item {
   list-style-type: none;
+  border: 1px solid #b5b7c4;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
 }
-.appointment-container {
+
+@media screen and (min-width: 768px) {
+  .appointment-item {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 32px;
+    min-width: 297px;
+  }
+}
+
+.header-container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
 }
-.appointment-details-card {
-  display: flex;
-  flex-direction: column;
-}
+
 .title {
-  color: #b5b7c4;
-  font-size: 14px;
-  font-weight: 800;
+  color: #171f46;
   font-family: 'Roboto';
-  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
 }
-.date-time {
-  color: #b5b7c4;
-  font-size: 14px;
-  font-weight: 800;
-  font-family: 'Roboto';
-  text-transform: uppercase;
+
+@media screen and (min-width: 768px) {
+  .list-title-heading {
+    font-size: 18px;
+  }
 }
-.star-container {
+
+.star-button {
   background: transparent;
-  margin-right: 24px;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background: transparent;
   align-self: center;
   border: none;
   outline: none;
 }
-.star-icon-container {
-  background: transparent;
-  outline: none;
-  border: none;
-  cursor: pointer;
+
+@media screen and (min-width: 768px) {
+  .star {
+    width: 24px;
+    height: 24px;
+  }
 }
-.star-icon {
+
+.date {
+  color: #7e858e;
+  font-family: 'Roboto';
+  font-size: 12px;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .date {
+    font-size: 16px;
+  }
 }
